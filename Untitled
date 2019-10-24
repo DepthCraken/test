@@ -1,0 +1,26 @@
+/**
+ * Produce the article with the "videoUrl" attribute set to the given url
+ * 
+ * @param {ArticleInterface} article - article to modify
+ * @param {string} url - the new video url (a youtube video)
+ * @return {ArticleInterface} the article with the modified videoUrl
+ * @example
+ * const myArticle = {
+ *  id: 6,
+ *  href: '#',
+ *  imageSrc: '/place_holder/3.jpg',
+ *  title: 'a Card Title',
+ *  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in justo quis dui ornare iaculis ut a urna. Nulla interdum.',
+ *  selected: false,
+ *  featured: true,
+ *  videoUrl: 'https://www.youtube.com/embed/0-nufsLsoZo',
+ *  content: 'hello world',
+ * }
+ * 
+ * const result = updateArticleVideo(myArticle, 'https://www.youtube.com/embed/0-FAKE-VIDEO')
+ * // expect result.videoUrl to be 'https://www.youtube.com/embed/0-FAKE-VIDEO'
+ *     
+ */
+export function updateArticleVideo(article: ArticleInterface, url: string): ArticleInterface {
+  return article;
+}
